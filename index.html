@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="myProject" class="my-5">
+      <div class="my-form w-75 mx-auto">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            name="productName"
+            id="productName"
+            class="form-control"
+            placeholder="Product Name"
+          />
+          <label for="productName">Product Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            name="productPrice"
+            id="productPrice"
+            class="form-control"
+            placeholder="Product Price"
+          />
+          <label for="productPrice">Product Price</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            name="productCategory"
+            id="productCategory"
+            class="form-control"
+            placeholder="Product Category"
+          />
+          <label for="productCategory">Product Category</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            name="productDescription"
+            id="productDescription"
+            class="form-control"
+            style="height: 100px"
+            placeholder="Product Description"
+          ></textarea>
+          <label for="productDescription">Product Description</label>
+        </div>
+        <input
+          type="submit"
+          id="mainButton"
+          value="add product"
+          class="btn btn-info text-white"
+        />
+      </div>
+      <div class="form-floating w-50 mx-auto my-5">
+        <input
+          type="search"
+          name="productSearch"
+          id="productSearch"
+          class="form-control"
+          placeholder="Search"
+        />
+        <label for="productSearch">Search</label>
+      </div>
+      <table class="w-75 mx-auto border-top table">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delet</th>
+          </tr>
+        </thead>
+        <tbody id="body"></tbody>
+      </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
